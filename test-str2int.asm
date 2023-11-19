@@ -5,12 +5,12 @@
 ; 64tass dialect
 ;
 
-	.cpu "6502"
+    .cpu "6502"
 
 ; BASIC loader (10 SYS 2064)
 *	= $0801
-	.word (+), 10
-	.text $9e, format("%d", start), 0
+    .word (+), 10
+    .text $9e, format("%d", start), 0
 +	.word 0
 
 *	= $0810

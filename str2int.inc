@@ -12,7 +12,7 @@ str2int_lib_inc := true
 .if str2int_lib_inc
 str2int_lib_inc := false
 
-	.cpu "6502"
+    .cpu "6502"
 
 ; STR2INT str, num, 10
 ; prm1 - null terminated string

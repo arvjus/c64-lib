@@ -7,12 +7,12 @@
 
 INPUT_STRING_BUFFER_SIZE = 15
 
-	.cpu "6502"
+    .cpu "6502"
 
 ; BASIC loader (10 SYS 2064)
 *	= $0801
-	.word (+), 10
-	.text $9e, format("%d", start), 0
+    .word (+), 10
+    .text $9e, format("%d", start), 0
 +	.word 0
 
 *	= $0810
@@ -29,12 +29,12 @@ l1
     lda #"?"
     jsr C64_CHROUT
     jsr input_string
-   	
+       
     lda #"!"
     jsr C64_CHROUT
- 	
+     
     lda #<is_buffer
-	ldy #>is_buffer
+    ldy #>is_buffer
     jsr C64_PRINT_LINE
 
     lda #$0d
@@ -52,5 +52,5 @@ digits_only
     pla
     rts
 
-	.include "c64.inc"
+    .include "c64.inc"
     .include "stdio.inc"

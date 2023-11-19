@@ -13,7 +13,7 @@ INT2STR_BUFFER_SIZE = 5   ; buffer size excluding null terminator
 .if int2str_lib_inc
 int2str_lib_inc := false
 
-	.cpu "6502"
+    .cpu "6502"
 
 ; INT2STR num, str, 10
 ; prm1 - integer to convert

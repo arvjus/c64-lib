@@ -13,7 +13,7 @@ div_lib_inc := true
 .if div_lib_inc
 div_lib_inc := false
 
-	.cpu "6502"
+    .cpu "6502"
 
 ; Func. div16
 ; Returns result in div16_num1
