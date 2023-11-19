@@ -7,11 +7,11 @@
 ;
 
 .weak
-div_lib_inc := true 
+div_inc := true 
 .endweak
 
-.if div_lib_inc
-div_lib_inc := false
+.if div_inc
+div_inc := false
 
     .cpu "6502"
 
@@ -48,5 +48,5 @@ div16_num1  .word 0
 div16_num2  .word 0
 div16_rem   .word 0
 
-.fi ; div_lib_inc
+.fi ; div_inc
 

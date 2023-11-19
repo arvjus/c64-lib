@@ -6,11 +6,11 @@
 ;
 
 .weak
-str2int_lib_inc := true 
+str2int_inc := true 
 .endweak
 
-.if str2int_lib_inc
-str2int_lib_inc := false
+.if str2int_inc
+str2int_inc := false
 
     .cpu "6502"
 
@@ -84,5 +84,5 @@ str2int_done
 
     .include "mul.inc"
 
-.fi ; str2int_lib_inc
+.fi ; str2int_inc
 

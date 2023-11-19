@@ -6,12 +6,12 @@
 ;
 
 .weak
-stdio_lib_inc := true 
+stdio_inc := true 
 INPUT_STRING_BUFFER_SIZE = 10   ; buffer size incluing null terminator
 .endweak
 
-.if stdio_lib_inc
-stdio_lib_inc := false
+.if stdio_inc
+stdio_inc := false
 
     .cpu "6502"
 
@@ -154,5 +154,5 @@ is_buffer
     
     .include "c64.inc"
 
-.fi ; stdio_lib_inc
+.fi ; stdio_inc
 

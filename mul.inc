@@ -7,11 +7,11 @@
 ;
 
 .weak
-mul_lib_inc := true 
+mul_inc := true 
 .endweak
 
-.if mul_lib_inc
-mul_lib_inc := false
+.if mul_inc
+mul_inc := false
 
     .cpu "6502"
 
@@ -75,5 +75,5 @@ mul16_num1      .word 0
 mul16_num2      .word 0
 mul16_result    .word 0, 0
 
-.fi ; mul_lib_inc
+.fi ; mul_inc
 

@@ -6,12 +6,12 @@
 ;
 
 .weak
-int2str_lib_inc := true 
+int2str_inc := true 
 INT2STR_BUFFER_SIZE = 5   ; buffer size excluding null terminator
 .endweak
 
-.if int2str_lib_inc
-int2str_lib_inc := false
+.if int2str_inc
+int2str_inc := false
 
     .cpu "6502"
 
@@ -77,5 +77,5 @@ done
 
     .include "div.inc"
         
-.fi ; int2str_lib_inc
+.fi ; int2str_inc
 

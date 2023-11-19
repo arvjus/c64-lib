@@ -17,7 +17,6 @@
 
 start
 
-;    jsr int2str
     #INT2STR num, buf, 10
 end brk
 
